@@ -8,3 +8,16 @@ The first file given is expected to be the training set. Validation and test set
 
 An example would look like: <br>
 `LibffmGenerator.out train.csv --valid valid.csv --test test.csv --n_train 70000 --n_valid 10000 --n_test 20000`
+
+# Installation
+
+For installation just clone the repository: <br>
+`git clone https://github.com/pklauke/LibffmGenerator`
+
+If the binary file isn't executable on your system recompile it e.g. <br>
+`g++ -o LibffmGenerator.out LibffmGenerator.cpp`
+
+On some operating systems (e.g. Ubuntu) errors may occur during compilation. If this happens try out <br>
+`g++ -o LibffmGenerator.out LibffmGenerator.cpp -std=c++0x` <br>
+instead.
+
